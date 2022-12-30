@@ -1,7 +1,6 @@
 # !/usr/bin/env python3
 
 from enum import IntEnum
-from aenum import  MultiValueEnum
 from typing import List, Tuple, Union
 from ctypes import c_ubyte
 from math import factorial
