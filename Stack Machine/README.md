@@ -10,3 +10,21 @@ Enum , Typing , ctypes , Math , Unittest <br />
 ## Environments 
 [Sublime text 4](https://www.sublimetext.com/)  ,  [PyCharm Professional by JetBrains](https://www.jetbrains.com/pycharm) <br />
 
+## Feedback 
+
+Hello, 
+
+looks good now, A4 is passed. But please have a look again on the 
+overflow state, some tests are failing due to an incorrect overflow state. 
+
+- ADD/FAC/MUL/SHL/XOR 
+- SPEAK/T4: Stack should be empty after our sequence, found whole string 
+(RES 64). We do not push anything for SPEAK. 
+- Exceptions: For DIV/0, both operands should be popped and checked 
+afterwards. Expected empty stack, found '0'. 
+
+
+Best regards, 
+
+Samuel Knobloch.
+
